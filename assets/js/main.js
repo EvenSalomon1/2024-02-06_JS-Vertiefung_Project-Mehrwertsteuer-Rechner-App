@@ -33,13 +33,15 @@ function main(event) {
     if (wählenProzent === "19") {
       const resultMehrwertsteuer = inputBetrag * 0.19;
       const resultEndpreis = inputBetrag + resultMehrwertsteuer;
-      outputMehrwertsteuerbetrag.innerHTML = resultMehrwertsteuer.toFixed(2);
-      outputNettoBrutto.innerHTML = resultEndpreis.toFixed(2);
+      outputMehrwertsteuerbetrag.innerHTML =
+        "€" + resultMehrwertsteuer.toFixed(2);
+      outputNettoBrutto.innerHTML = "€" + resultEndpreis.toFixed(2);
     } else {
       const resultMehrwertsteuer = inputBetrag * 0.07;
       const resultEndpreis = inputBetrag + resultMehrwertsteuer;
-      outputMehrwertsteuerbetrag.innerHTML = resultMehrwertsteuer.toFixed(2);
-      outputNettoBrutto.innerHTML = resultEndpreis.toFixed(2);
+      outputMehrwertsteuerbetrag.innerHTML =
+        "€" + resultMehrwertsteuer.toFixed(2);
+      outputNettoBrutto.innerHTML = "€" + resultEndpreis.toFixed(2);
     }
   } else {
     if (wählenProzent === "19") {
